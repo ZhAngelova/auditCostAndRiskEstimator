@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Risk & Cost Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <h1>Audit Risk & Cost Calculator</h1>
+  <form id="calculatorForm">
+    <div>
+      <label>Oracle Java on End-User Devices</label>
+      <select id="q1">
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Not sure">Not sure</option>
+      </select>
+
+      <label>Oracle Java on Servers</label>
+      <select id="q2">
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Not sure">Not sure</option>
+      </select>
+
+      <label>Unlicensed Oracle Java Use</label>
+      <select id="q3">
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Not sure">Not sure</option>
+      </select>
+
+      <label>Employee Headcount > 500</label>
+      <select id="q4">
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Oracle Middleware Use</label>
+      <select id="q5">
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Microsoft Software on Unmanaged Devices</label>
+      <select id="q6">
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Not sure">Not sure</option>
+      </select>
+
+      <label>Vendor Renewal within 12 Months</label>
+      <select id="q7">
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="Within 12 months">Within 12 months</option>
+        <option value="No">No</option>
+        <option value="Not sure">Not sure</option>
+      </select>
+
+      <button type="button" onclick="calculate()">Calculate</button>
+    </div>
+  </form>
+
+  <div class="result" id="resultArea"></div>
+
+
+</body>
+</html>
